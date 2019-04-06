@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Starter Kit</title>
+    <link media="all" rel="stylesheet" href="assets/css/vendor.min.css" />
+    <link media="all" rel="stylesheet" href="assets/css/style.min.css" />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <section class="travel">
+        <div class="travel-map" data-google="map"></div>
+        <div class="travel-users">
+          <button type="button" class="travel-user" data-traveler="user-0">
+            User 0
+          </button>
+        </div>
+        <div class="travel-sidebar">
+          travel sidebar
+        </div>
+      </section>
+    </div>
+
+    <script src="assets/js/vendor.min.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaIl3sRnHH7g29FKAdvZSlum46EfQq7ns&callback=initMap" defer></script>
+  </body>
+</html>

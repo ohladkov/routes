@@ -1,0 +1,29 @@
+.travel {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  min-height: 300px;
+  margin: 100px auto 50px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #eee;
+
+  &-map {
+    flex-grow: 1;
+  }
+
+  &-users,
+  &-sidebar {
+    max-width: 160px;
+    width: 100%;
+  }
+
+  &-users {
+    padding: 10px;
+    background-color: #f7f7f7;
+  }
+
+  &-sidebar {
+    display: none;
+  }
+}

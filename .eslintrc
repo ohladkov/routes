@@ -1,0 +1,15 @@
+{
+  "globals": {
+    "jQuery": true,
+    "$": true,
+    "google": true
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": "airbnb-base",
+  "rules": {
+
+  }
+}
