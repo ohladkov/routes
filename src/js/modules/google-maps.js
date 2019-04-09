@@ -36,6 +36,7 @@ const googleMaps = (($) => {
       $.getJSON(url, ({ markers }) => {
         const map = new google.maps.Map(mapContainer, constants.MAP_OPTIONS);
         const bounds = new google.maps.LatLngBounds();
+        const directionsService = new google.maps.DirectionsService();
 
         markers.forEach((markerItem) => {
           const [lat, lng] = [markerItem.position[0], markerItem.position[1]];
@@ -68,7 +69,6 @@ const googleMaps = (($) => {
             });
 
             routes.forEach((route) => {
-              const directionsService = new google.maps.DirectionsService();
               const directionsDisplay = new google.maps.DirectionsRenderer();
 
               directionsDisplay.setMap(map);
@@ -85,7 +85,7 @@ const googleMaps = (($) => {
           bounds.extend(location);
         });
 
-        centerZoomMapToMarkers(map, bounds);
+        // centerZoomMapToMarkers(map, bounds);
       }).fail((_jqxhr, _textStatus, error) => {
         throw new Error(error);
       });

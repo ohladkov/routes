@@ -3,8 +3,8 @@ export default {
   MAP_OPTIONS: {
     zoom: 8,
     center: {
-      lat: -34.397,
-      lng: 150.644,
+      lat: 50.202,
+      lng: 36.4356,
     },
   },
 };
